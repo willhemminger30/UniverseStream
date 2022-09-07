@@ -50,7 +50,7 @@ public class Main {
 	 * function getUniverseInfoUsingStream
 	 * will return a List of Strings with the names of all objects in the current universe
 	 * @param u
-	 * @return List<String>
+	 * @return List<String> names of objects
 	 */
 	public static List<String> getUniverseInfoUsingStream(Universe u) {
 		System.out.println("\nUniverse Information:");
@@ -145,7 +145,7 @@ public class Main {
 	 * function getSystemMap
 	 * returns a map of each system and its corresponding CelestialBody objects, which will be stars
 	 * @param u
-	 * @return
+	 * @return Map<String, List<CelestialBody>>, map of system name and its associated CelestialBody objects
 	 */
 	public static Map<String,List<CelestialBody>> getSystemMap(Universe u) {
 		
@@ -158,7 +158,7 @@ public class Main {
 	 * function starsWithMoreThanTenPlanets
 	 * returns a list of all stars with more than ten planets
 	 * @param u
-	 * @return
+	 * @return List<Star>, a list of Star objects with more than 10 planets
 	 */
 	public static List<Star> starsWithMoreThanTenPlanets(Universe u) {
 		return u.getBodies().stream()
